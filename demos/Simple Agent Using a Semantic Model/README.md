@@ -36,7 +36,7 @@ Open a Power BI report in either the Power BI Desktop application or on the web,
 PRO TIPS:
 - The order matters. I experimented with several variations and got the best results with this set and order.
 - Copy/paste and send a few items at a time; the Power BI Copilot chat allows up to 500 characters so you can knock these out with about 5 copy/paste rounds. This can go even faster by enabling your clipboard to hold multiple items (think clip-clip-clip, paste-paste-paste!) Check out [these instructions for Windows 10](https worry about copying any of the responses from Copilot until after you have sent all messages.
-- Read the explanation of each item's value at the end of this post.
+- Read the explanation of each item's value here: [Copilot Chat Directives and Values]([https://learn.microsoft.com/en-us/fabric/data-science/data-agent-sharing](https://github.com/jennratten/fabric-data-agent-gallery/edit/main/demos/Simple%20Agent%20Using%20a%20Semantic%20Model)
 
 ### Messages to Send to Copilot
 - Describe the structure of the dataset.
