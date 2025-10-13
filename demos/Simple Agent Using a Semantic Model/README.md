@@ -1,6 +1,8 @@
 ## Data Agents + Fast & Simple
 What if there was a way to build a Fabric Data Agent where it felt less like deciphering ancient hieroglyphics and more like ordering your favorite coffee?
+
 Good news! With a little help from Copilot in Power BI, you can skip the guesswork, the endless documentation, the “where did I save those notes?” puzzle as well as the “what’s a schema?” panic. Just ask Copilot eight smart questions, copy/paste the answers, and voilà—your agent is ready to roll. No code, no drama, just pure BI magic.
+
 This guide is for anyone who likes speed, quality, and a little bit of tech wizardry. If you want to automate at scale, stay tuned for a future post!
 
 ## Real-World Use Case
@@ -10,13 +12,13 @@ You have Power BI semantic models (datasets) in use today and want to create Fab
 It is important to note that this method generates a ‘general’ data agent in a low code / no code approach where the source is a semantic model that was developed using modeling best practices and is AI-Ready. Not to worry though, I will be writing about all kinds of variants… more on this later.
 
 ## Before You Start
-Before you can use these features, make sure you satisfy the requirements for the use of Copilot and Fabric data agents. You will also need a Power BI semantic model. I have included a Git repo with the files referenced in this post to make it easy for everyone to follow along. Microsoft also provides many sample reports that you can use to get familiar with Power BI.
+Before you can use these features, make sure you satisfy the requirements for the use of Copilot and Fabric data agents. You will also need a Power BI semantic model. I have included the [semantic model and source file](https://github.com/jennratten/fabric-data-agent-gallery/blob/main/demos/datasets/) referenced in this post to make it easy for everyone to follow along. Microsoft also provides many sample reports that you can use to get familiar with Power BI.
 
 ## Process at a Glance
 <img src="media/01-process-at-a-glance.png" alt="Process at a Glance">
 
 ## The Semantic Model
-The semantic model is a standard star schema. For more info on star schemas see: [Understand star schema and the importance forPower BI
+The semantic model is a standard star schema. For more info on star schemas see: [Understand star schema and the importance for Power BI](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema)
 - Explicit measures are defined in a dedicated table named _Measures.
 - The Sales table is the fact table and is hidden.
 - Dimension/lookup tables have a one-to-many, single direction relationship with the Sales table.
@@ -36,7 +38,7 @@ Open a Power BI report in either the Power BI Desktop application or on the web,
 PRO TIPS:
 - The order matters. I experimented with several variations and got the best results with this set and order.
 - Copy/paste and send a few items at a time; the Power BI Copilot chat allows up to 500 characters so you can knock these out with about 5 copy/paste rounds. This can go even faster by enabling your clipboard to hold multiple items (think clip-clip-clip, paste-paste-paste!) Check out [these instructions for Windows 10](https worry about copying any of the responses from Copilot until after you have sent all messages.
-- Read the explanation of each item's value here: [Copilot Chat Directives and Values]([https://learn.microsoft.com/en-us/fabric/data-science/data-agent-sharing](https://github.com/jennratten/fabric-data-agent-gallery/edit/main/demos/Simple%20Agent%20Using%20a%20Semantic%20Model)
+- Read the explanation of each item's value here: [Copilot Chat Directives and Values](https://github.com/jennratten/fabric-data-agent-gallery/blob/main/demos/Simple%20Agent%20Using%20a%20Semantic%20Model/Copilot%20Chat%20Directives%20and%20Value.xlsx)
 
 ### Messages to Send to Copilot
 - Describe the structure of the dataset.
